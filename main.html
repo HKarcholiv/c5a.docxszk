@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>c5a.docx</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Do not harrass anyone mentioned in here.</h1>
+            <p class="label">Made By Karcholiv.</p>
+        </div>
+        
+        <!-- Navigation Buttons -->
+        <div class="button-container">
+            <a class="normal-button" href="MainPage.html">Go to Server Archives</a>
+            <a class="normal-button" href="DocsPage.html">Go to Documents</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+}
+
+.header .label {
+    font-size: 18px;
+    color: #ccc;
+    margin: 5px 0;
+}
+
+/* Normal Buttons */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.normal-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for hover animation */
+}
+
+.normal-button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px); /* Added lift on hover */
+}
+
+/* Collapsible Buttons */
+.collapsible {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for hover animation */
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.collapsible:hover {
+    background-color: #45a049;
+    transform: translateY(-3px); /* Added lift on hover */
+}
+
+.collapsible:after {
+    content: '+';
+    font-weight: bold;
+    float: right;
+}
+
+/* Collapsible Content */
+.content {
+    padding: 0 18px;
+    display: block;
+    overflow: hidden;
+    background-color: #000;
+    border-radius: 0 0 5px 5px;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height 0.5s ease;
+    margin-bottom: 5px;
+}
+
+.content a {
+    display: block;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    background-color: #333;
+    margin-bottom: 2px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for hover animation */
+}
+
+.content a:hover {
+    background-color: #575757;
+    transform: translateY(-3px); /* Added lift on hover */
+}
+
+.content.show {
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000; /* Ensuring the background is black */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Scrollbar Styles */
+.content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.content::-webkit-scrollbar-track {
+    background-color: #333;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background-color: #4CAF50;
+    border-radius: 10px;
+}
+</style>
