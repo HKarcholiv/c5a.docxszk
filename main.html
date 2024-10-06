@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,13 +12,14 @@
         <!-- Header Section -->
         <div class="header">
             <h1>c5a.docx</h1>
-            <p class="label">Made By Karcholiv.(dont harrass anyone mentioned here)</p>
+            <p class="label">Made By Karcholiv.(Do not harrass anyone mentioned in here.)</p>
         </div>
         
         <!-- Navigation Buttons -->
         <div class="button-container">
             <a class="normal-button" href="MainPage.html">Go to Server Archives</a>
             <a class="normal-button" href="DocsPage.html">Go to Documents</a>
+            <a class="normal-button" href="DocsPage.html">Other...</a>
         </div>
     </div>
     <script src="script.js"></script>
@@ -56,6 +58,7 @@
     gap: 10px;
 }
 
+/* Normal Buttons */
 .normal-button {
     background-color: #4CAF50;
     color: white;
@@ -70,8 +73,15 @@
 
 .normal-button:hover {
     background-color: #45a049;
-    transform: translateY(-3px); /* Added lift on hover */
+    transform: scale(1.05); /* Updated to match collapsible menu hover effect */
 }
+
+/* Scrollbar Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+
 
 /* Collapsible Buttons */
 .collapsible {
@@ -134,9 +144,7 @@
 }
 
 /* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
+
 
 body {
     background-color: #000; /* Ensuring the background is black */
