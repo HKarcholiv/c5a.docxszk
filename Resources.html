@@ -1,0 +1,201 @@
+</head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>c5a.docx</title>
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+
+    <body>
+        <div class="container">
+            <!-- Header and Label Section -->
+            <div class="header">
+                <h1>c5a.docx > Resources</h1>
+                <p class="label">Made By Karcholiv.</p>
+                <p class="label">This Page Is Not Available Yet.</p>
+            </div>
+    
+            <!-- Normal Buttons -->
+            <div class="button-container">
+
+            </div>
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
+    <style>
+    html, body {
+        height: 100%;
+        font-family: Arial, sans-serif;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        background: hsla(350, 73%, 44%, 1);
+    
+    background: linear-gradient(90deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C11E38", endColorstr="#220B34", GradientType=1 );
+    }
+    .container {
+        width: 100%;
+        max-width: 400px;
+        background-color: #000;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+    }
+    .container:hover {
+    transform: scale(1.05); /* Slightly enlarge the container */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Add more shadow for a pop-up effect */
+    }
+    /* Header Styling */
+    .header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .header h1 {
+        font-size: 24px;
+        color: white;
+        margin: 0;
+    }
+    
+    .header .label {
+        font-size: 18px;
+        color: #ccc;
+        margin: 5px 0;
+    }
+    
+    /* Normal Buttons */
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Normal Buttons */
+    .normal-button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 16px;
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for hover animation */
+    }
+    
+    .normal-button:hover {
+        background-color: #45a049;
+        transform: scale(1.05); /* Updated to match collapsible menu hover effect */
+    }
+    
+    /* Scrollbar Styles */
+    
+    
+    
+    
+    /* Collapsible Buttons */
+    .collapsible {
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for hover animation */
+        margin-bottom: 5px;
+        border-radius: 5px;
+    }
+    
+    .collapsible:hover {
+        background-color: #45a049;
+        transform: translateY(-3px); /* Added lift on hover */
+    }
+    
+    .collapsible:after {
+        content: '+';
+        font-weight: bold;
+        float: right;
+    }
+    
+    /* Collapsible Content */
+    .content {
+        padding: 0 18px;
+        display: block;
+        overflow: hidden;
+        background-color: #000;
+        border-radius: 0 0 5px 5px;
+        max-height: 0;
+        overflow-y: hidden;
+        transition: max-height 0.5s ease;
+        margin-bottom: 5px;
+    }
+    
+    .content a {
+        display: block;
+        padding: 8px;
+        color: white;
+        text-decoration: none;
+        background-color: #333;
+        margin-bottom: 2px;
+        border-radius: 3px;
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for hover animation */
+    }
+    
+    .content a:hover {
+        background-color: #575757;
+        transform: translateY(-3px); /* Added lift on hover */
+    }
+    
+    .content.show {
+        max-height: 150px;
+        overflow-y: auto;
+    }
+    
+    /* Smooth Scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        background-color: #000; /* Ensuring the background is black */
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+    
+    /* Scrollbar Styles */
+    .content::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    .content::-webkit-scrollbar-track {
+        background-color: #333;
+    }
+    
+    .content::-webkit-scrollbar-thumb {
+        background-color: #4CAF50;
+        border-radius: 10px;
+    }
+    
+    
+    </style>

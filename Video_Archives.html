@@ -9,25 +9,44 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-     
+        <!-- Header and Label Section -->
         <div class="header">
-            <h1>c5a.docx</h1>
-            <p class="label">Made By Karcholiv.(Don't Harrass anyone mentioned here)</p>
+            <h1>c5a.docx > Archives > Video Archives</h1>
+            <p class="label">Made By Karcholiv.</p>
         </div>
-        
+
+        <!-- Normal Buttons -->
         <div class="button-container">
-            <a class="normal-button" href="Archives.html">Go to Archives</a>
-            <a class="normal-button" href="DocsPage.html">Go to Documents</a>
+            <p class="label">There are no Video Archives yet.</p>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
 <style>
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: hsla(350, 73%, 44%, 1);
 
+background: linear-gradient(90deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C11E38", endColorstr="#220B34", GradientType=1 );
+}
 .container {
     width: 100%;
     max-width: 400px;
@@ -43,27 +62,6 @@
 .container:hover {
     transform: scale(1.05); /* Slightly enlarge the container */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Add more shadow for a pop-up effect */
-}
-
-html, body {
-    height: 100%;
-    font-family: Arial, sans-serif;
-    background-color: #000; /* Black background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    scroll-behavior: smooth; /* Smooth scrolling */
-
-    background: hsla(350, 73%, 44%, 1);
-
-background: linear-gradient(90deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
-
-background: -moz-linear-gradient(90deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
-
-background: -webkit-linear-gradient(90deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C11E38", endColorstr="#220B34", GradientType=1 );
 }
 /* Header Styling */
 .header {
@@ -109,9 +107,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C11E38", en
 }
 
 /* Scrollbar Styles */
-html {
-    scroll-behavior: smooth;
-}
+
 
 
 
@@ -176,7 +172,9 @@ html {
 }
 
 /* Smooth Scrolling */
-
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #000; /* Ensuring the background is black */
@@ -197,4 +195,6 @@ body {
     background-color: #4CAF50;
     border-radius: 10px;
 }
+
+
 </style>
