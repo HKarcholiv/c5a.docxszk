@@ -22,13 +22,33 @@
             <a class="normal-button" href="https://www.youtube.com/channel/UCxhxerrbP7E5RlATGire-3Q">NabilGeo5563</a>
             <a class="normal-button" href="https://www.youtube.com/channel/UCiSJHTMs_sUAxoilY6peTtQ">Erwin</a>
             <a class="normal-button" href="https://www.youtube.com/channel/UCZwL7NAe0j0Wtu8VHC0Mb_A">SethGamer2019</a>
+            <button class="back-button" onclick="goBack()">◄ Go Back</button>
         </div>
     </div>
+     
     <script src="script.js"></script>
 </body>
 </html>
 <style>
+.back-button {
+    display: block;
+    margin: 20px auto 0; /* Center horizontally with some top margin */
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Semi-transparent green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 16px;
+    text-align: center;
+}
 
+/* Hover effect */
+.back-button:hover {
+    background-color: #45a049; /* Solid green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
 .container {
     width: 100%;
     max-width: 400px;
@@ -200,3 +220,8 @@ body {
     border-radius: 10px;
 }
 </style>
+<script>
+    function goBack() {
+    window.history.back();
+}
+</script>

@@ -204,6 +204,8 @@
        <div class="content">
           <a href="Peace (For Real This time lmao)/Peace (for real this time) - Text Channels - peace-and-friendship-chat [1299348264088240191].html">#  peace-and-friendship-chat </a>
       </div>
+
+      <button class="back-button" onclick="goBack()">◄ Go Back</button>
   </div>
   </body>
   <style>
@@ -211,6 +213,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.back-button {
+    display: block;
+    margin: 20px auto 0; /* Center horizontally with some top margin */
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Semi-transparent green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Hover effect */
+.back-button:hover {
+    background-color: #45a049; /* Solid green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .header {
@@ -379,6 +401,11 @@ html, body {
             });
         }
     </script>
+<script>
+    function goBack() {
+    window.history.back();
+}
+</script>
 
 </body>
 </html>
