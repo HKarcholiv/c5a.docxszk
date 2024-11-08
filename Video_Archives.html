@@ -37,31 +37,33 @@ html, body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background: hsla(350, 73%, 44%, 1);
-    
-background: linear-gradient(90deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
-
-background: -moz-linear-gradient(90deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
-
-background: -webkit-linear-gradient(90deg, hsla(350, 73%, 44%, 1) 0%, hsla(274, 65%, 12%, 1) 100%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C11E38", endColorstr="#220B34", GradientType=1 );
+    background-image: url('background.png'); /* Path to the GIF */
+    background-size: cover; /* Makes the GIF cover the entire background */
+    background-position: center; /* Centers the GIF */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Keeps the background in place during scroll */
 }
 .container {
     width: 100%;
     max-width: 400px;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 8px; /* Rounded corners */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Prevents content from breaking the border-radius */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Optional subtle border for better definition */
 }
+
 .container:hover {
     transform: scale(1.05); /* Slightly enlarge the container */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Add more shadow for a pop-up effect */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+    border-radius: 8px; /* Ensure rounded corners remain during hover */
 }
 /* Header Styling */
 .header {
